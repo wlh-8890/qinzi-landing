@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>虢海平 NLP 亲子公益课 — 好父母是学出来的</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream: #FFF8F0;
+    --warm-white: #FFFBF7;
+    --amber: #E8A850;
+    --deep-amber: #C6803A;
+    --terracotta: #C97B5B;
+    --soft-brown: #6B4E3D;
+    --dark: #3B2A1E;
+    --text: #4A3728;
+    --text-light: #8B7355;
+    --card-bg: #FFF3E8;
+    --border: #F0DCC8;
+  }
+
+  body {
+    font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 420px;
+    margin: 0 auto;
+    background: var(--warm-white);
+    min-height: 100vh;
+    box-shadow: 0 0 60px rgba(107, 78, 61, 0.06);
+  }
+
+  /* ── Hero ── */
+  .hero {
+    padding: 48px 28px 36px;
+    text-align: center;
+    background: linear-gradient(180deg, #FFF3E6 0%, var(--warm-white) 100%);
+  }
+
+  .hero-badge {
+    display: inline-block;
+    padding: 6px 18px;
+    background: var(--terracotta);
+    color: #fff;
+    font-size: 13px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--dark);
+    line-height: 1.4;
+    margin-bottom: 12px;
+  }
+
+  .hero h1 .highlight {
+    color: var(--terracotta);
+  }
+
+  .hero .subtitle {
+    font-size: 16px;
+    color: var(--text-light);
+    margin-bottom: 28px;
+  }
+
+  .hero .meta {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    font-size: 13px;
+    color: var(--text-light);
+    margin-bottom: 32px;
+  }
+
+  .hero .meta span {
+    display: flex; align-items: center; gap: 4px;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    padding: 14px 48px;
+    background: linear-gradient(135deg, var(--amber), var(--deep-amber));
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(200, 128, 58, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .btn-primary:active { transform: scale(0.97); }
+
+  /* ── Pain point ── */
+  .section {
+    padding: 36px 28px;
+  }
+
+  .section-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .section-title::after {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 3px;
+    background: var(--amber);
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+
+  .pain-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .pain-card {
+    background: var(--card-bg);
+    padding: 18px 20px;
+    border-radius: 12px;
+    font-size: 15px;
+    color: var(--text);
+    border-left: 3px solid var(--terracotta);
+  }
+
+  /* ── Quote ── */
+  .quote-block {
+    margin: 0 28px 36px;
+    padding: 28px 24px;
+    background: linear-gradient(135deg, #FFF3E6, #FDE8D8);
+    border-radius: 16px;
+    text-align: center;
+  }
+
+  .quote-block .quote-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark);
+    line-height: 1.7;
+    margin-bottom: 8px;
+  }
+
+  .quote-block .quote-author {
+    font-size: 13px;
+    color: var(--text-light);
+  }
+
+  /* ── Tools ── */
+  .tool-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .tool-card {
+    background: #fff;
+    padding: 22px 20px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+  }
+
+  .tool-card .tool-num {
+    font-size: 12px;
+    color: var(--terracotta);
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+  }
+
+  .tool-card .tool-name {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 8px;
+  }
+
+  .tool-card .tool-desc {
+    font-size: 14px;
+    color: var(--text-light);
+    line-height: 1.7;
+  }
+
+  /* ── Teacher ── */
+  .teacher-block {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    background: var(--card-bg);
+    padding: 24px;
+    border-radius: 16px;
+    margin: 0 28px 36px;
+  }
+
+  .teacher-avatar {
+    width: 64px; height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--terracotta), var(--amber));
+    flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 28px; color: #fff; font-weight: 700;
+  }
+
+  .teacher-info h3 {
+    font-size: 17px;
+    color: var(--dark);
+    margin-bottom: 6px;
+  }
+
+  .teacher-info p {
+    font-size: 13px;
+    color: var(--text-light);
+    line-height: 1.7;
+  }
+
+  /* ── Course info ── */
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .info-item {
+    background: #fff;
+    padding: 18px 14px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    text-align: center;
+  }
+
+  .info-item .info-label {
+    font-size: 12px;
+    color: var(--text-light);
+    margin-bottom: 4px;
+  }
+
+  .info-item .info-value {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--dark);
+  }
+
+  .info-item .info-value.free {
+    color: var(--terracotta);
+    font-size: 20px;
+  }
+
+  /* ── CTA ── */
+  .cta-section {
+    padding: 32px 28px 48px;
+    text-align: center;
+  }
+
+  .cta-section .cta-note {
+    font-size: 13px;
+    color: var(--text-light);
+    margin-top: 16px;
+  }
+
+  /* ── Footer ── */
+  .footer {
+    text-align: center;
+    padding: 24px 28px 36px;
+    font-size: 12px;
+    color: var(--text-light);
+    opacity: 0.7;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-badge">纯公益 · 免学费</div>
+    <h1>好父母是<span class="highlight">学出来</span>的</h1>
+    <p class="subtitle">2 天时间，学会让孩子愿意跟你说话</p>
+    <div class="meta">
+      <span>📍 长沙</span>
+      <span>📅 2 天线下</span>
+      <span>👩‍🏫 虢海平导师</span>
+    </div>
+    <a href="#cta" class="btn-primary">立即预约席位</a>
+  </section>
+
+  <!-- Pain points -->
+  <section class="section">
+    <h2 class="section-title">你也在经历这些吗</h2>
+    <div class="pain-cards">
+      <div class="pain-card">明明想好好说话，一开口就变成了吼</div>
+      <div class="pain-card">道理讲了无数遍，孩子一个字都没听进去</div>
+      <div class="pain-card">孩子回家就关门，你连他发生了什么都不知道</div>
+      <div class="pain-card">你发现自己越来越像当年的父母，你不想那样</div>
+    </div>
+  </section>
+
+  <!-- Quote -->
+  <div class="quote-block">
+    <p class="quote-text">"每一次把沟通变成控制，孩子就关一扇窗。<br>每一次把控制换成沟通，孩子就开一扇门。"</p>
+    <p class="quote-author">—— 虢海平</p>
+  </div>
+
+  <!-- Tools -->
+  <section class="section">
+    <h2 class="section-title">两天里，你会带走三样东西</h2>
+    <div class="tool-list">
+      <div class="tool-card">
+        <div class="tool-num">01</div>
+        <div class="tool-name">录像机说话</div>
+        <div class="tool-desc">只讲事实不加评判。把"你又打翻了"换成"牛奶洒了，我去拿抹布"——三秒钟，孩子从防御变合作。</div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-num">02</div>
+        <div class="tool-name">声调灵活训练</div>
+        <div class="tool-desc">同样一句话，用命令的声调是控制，用邀请的声调是沟通。现场用十几种声调练习，你才会发现——原来自己只会两种：命令和着急。</div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-num">03</div>
+        <div class="tool-name">聆听复述</div>
+        <div class="tool-desc">孩子说"不想上学"，你先不追问，只是说"嗯，你不想上学，妈妈听到了"。停三秒。他真正的想法，才敢从第二句出来。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teacher -->
+  <div class="teacher-block">
+    <div class="teacher-avatar">虢</div>
+    <div class="teacher-info">
+      <h3>虢海平 导师</h3>
+      <p>美国 NLP 大学注册导师，中国 NLP 实用心理学领域资深导师。17 年一线授课，线下 1600+ 天，学员遍布全国。80% 来自转介绍——不好，没人会推荐。</p>
+    </div>
+  </div>
+
+  <!-- Course info -->
+  <section class="section">
+    <h2 class="section-title">课程信息</h2>
+    <div class="info-grid">
+      <div class="info-item">
+        <div class="info-label">时间</div>
+        <div class="info-value">2 天</div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">地点</div>
+        <div class="info-value">长沙 · 线下</div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">学费</div>
+        <div class="info-value free">免费</div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">形式</div>
+        <div class="info-value">体验式教学</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="cta">
+    <a href="#" class="btn-primary">添加微信 · 预约席位</a>
+    <p class="cta-note">备注"亲子公益课"，名额有限，报满即止</p>
+  </section>
+
+  <!-- Footer -->
+  <div class="footer">
+    润鼎文化（中国 NLP 中心）· 长沙<br>
+    把爱传出去，把光带回家
+  </div>
+
+</div>
+
+</body>
+</html>
