@@ -3,398 +3,365 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>虢海平 NLP 亲子公益课 — 好父母是学出来的</title>
-<meta property="og:title" content="虢海平 NLP 亲子公益课 — 好父母是学出来的">
-<meta property="og:description" content="2 天纯公益线下课，学会让孩子愿意跟你说话。录像机说话 · 声调灵活训练 · 聆听复述。">
-<meta property="og:image" content="https://wlh-8890.github.io/qinzi-landing/cover.png">
+<title>金钱焦虑的家庭模式：你以为在缺钱，其实是在继承恐惧</title>
+<meta name="description" content="一花钱就不安，一谈钱就紧张。真正困住你的，也许不是账户余额，而是从小继承下来的金钱焦虑家庭模式。">
+<meta property="og:title" content="金钱焦虑的家庭模式：你以为在缺钱，其实是在继承恐惧">
+<meta property="og:description" content="不是含着泪缩着花，是站着心安地花。从你开始，这个家不再用焦虑谈钱。">
+<meta property="og:image" content="https://wlh-8890.github.io/qinzi-landing/article-money-01.png">
 <meta property="og:url" content="https://wlh-8890.github.io/qinzi-landing/">
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="虢海平 NLP 亲子公益课 — 好父母是学出来的">
-<meta name="twitter:description" content="2 天纯公益线下课，学会让孩子愿意跟你说话。">
-<meta name="twitter:image" content="https://wlh-8890.github.io/qinzi-landing/cover.png">
+<meta name="twitter:title" content="金钱焦虑的家庭模式：你以为在缺钱，其实是在继承恐惧">
+<meta name="twitter:description" content="真正的金钱自由，不只是赚到多少钱，而是换一种和钱相处的姿态。">
+<meta name="twitter:image" content="https://wlh-8890.github.io/qinzi-landing/article-money-01.png">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --cream: #FFF8F0;
-    --warm-white: #FFFBF7;
-    --amber: #E8A850;
-    --deep-amber: #C6803A;
-    --terracotta: #C97B5B;
-    --soft-brown: #6B4E3D;
-    --dark: #3B2A1E;
-    --text: #4A3728;
-    --text-light: #8B7355;
-    --card-bg: #FFF3E8;
-    --border: #F0DCC8;
+    --paper: #fffaf4;
+    --surface: #fffefd;
+    --ink: #2f2a25;
+    --text: #50463c;
+    --muted: #82756a;
+    --line: #eadfd4;
+    --rust: #b8624a;
+    --gold: #d99a43;
+    --sage: #58766d;
+    --blue: #415f7d;
+    --soft-rust: #fff0ea;
+    --soft-sage: #edf5f1;
+    --soft-gold: #fff4df;
   }
 
   body {
     font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-    background: var(--cream);
+    background: var(--paper);
     color: var(--text);
-    line-height: 1.8;
+    line-height: 1.9;
     -webkit-font-smoothing: antialiased;
   }
 
   .page {
-    max-width: 420px;
+    max-width: 760px;
     margin: 0 auto;
-    background: var(--warm-white);
+    background: var(--surface);
     min-height: 100vh;
-    box-shadow: 0 0 60px rgba(107, 78, 61, 0.06);
   }
 
-  /* ── Hero ── */
   .hero {
-    padding: 48px 28px 36px;
-    text-align: center;
-    background: linear-gradient(180deg, #FFF3E6 0%, var(--warm-white) 100%);
+    padding: 42px 22px 28px;
+    border-bottom: 1px solid var(--line);
   }
 
-  .hero-badge {
-    display: inline-block;
-    padding: 6px 18px;
-    background: var(--terracotta);
-    color: #fff;
+  .kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--rust);
     font-size: 13px;
-    border-radius: 20px;
-    letter-spacing: 1px;
-    margin-bottom: 24px;
-  }
-
-  .hero h1 {
-    font-size: 28px;
     font-weight: 700;
-    color: var(--dark);
-    line-height: 1.4;
-    margin-bottom: 12px;
+    letter-spacing: 0.08em;
+    margin-bottom: 16px;
   }
 
-  .hero h1 .highlight {
-    color: var(--terracotta);
-  }
-
-  .hero .subtitle {
-    font-size: 16px;
-    color: var(--text-light);
-    margin-bottom: 28px;
-  }
-
-  .hero .meta {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    font-size: 13px;
-    color: var(--text-light);
-    margin-bottom: 32px;
-  }
-
-  .hero .meta span {
-    display: flex; align-items: center; gap: 4px;
-  }
-
-  .btn-primary {
-    display: inline-block;
-    padding: 14px 48px;
-    background: linear-gradient(135deg, var(--amber), var(--deep-amber));
-    color: #fff;
-    font-size: 17px;
-    font-weight: 600;
-    border: none;
-    border-radius: 30px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    text-decoration: none;
-    box-shadow: 0 4px 16px rgba(200, 128, 58, 0.3);
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-
-  .btn-primary:active { transform: scale(0.97); }
-
-  /* ── Pain point ── */
-  .section {
-    padding: 36px 28px;
-  }
-
-  .section-title {
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--dark);
-    text-align: center;
-    margin-bottom: 24px;
-  }
-
-  .section-title::after {
+  .kicker::before {
     content: "";
+    width: 26px;
+    height: 2px;
+    background: var(--rust);
+  }
+
+  h1 {
+    color: var(--ink);
+    font-size: clamp(30px, 7vw, 48px);
+    line-height: 1.18;
+    font-weight: 800;
+    letter-spacing: 0;
+    margin-bottom: 18px;
+  }
+
+  .subtitle {
+    color: var(--muted);
+    font-size: 17px;
+    line-height: 1.75;
+    margin-bottom: 22px;
+  }
+
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  .meta span {
+    padding: 5px 10px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: #fff;
+  }
+
+  .feature-img {
     display: block;
-    width: 32px;
-    height: 3px;
-    background: var(--amber);
-    margin: 10px auto 0;
-    border-radius: 2px;
+    width: calc(100% - 44px);
+    margin: 26px auto 0;
+    border-radius: 8px;
+    border: 1px solid var(--line);
   }
 
-  .pain-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  article {
+    padding: 10px 22px 44px;
   }
 
-  .pain-card {
-    background: var(--card-bg);
-    padding: 18px 20px;
-    border-radius: 12px;
-    font-size: 15px;
-    color: var(--text);
-    border-left: 3px solid var(--terracotta);
-  }
-
-  /* ── Quote ── */
-  .quote-block {
-    margin: 0 28px 36px;
-    padding: 28px 24px;
-    background: linear-gradient(135deg, #FFF3E6, #FDE8D8);
-    border-radius: 16px;
-    text-align: center;
-  }
-
-  .quote-block .quote-text {
+  .lead {
+    padding: 24px 0 8px;
     font-size: 18px;
-    font-weight: 600;
-    color: var(--dark);
-    line-height: 1.7;
-    margin-bottom: 8px;
+    color: var(--ink);
   }
 
-  .quote-block .quote-author {
-    font-size: 13px;
-    color: var(--text-light);
-  }
-
-  /* ── Tools ── */
-  .tool-list {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .tool-card {
-    background: #fff;
-    padding: 22px 20px;
-    border-radius: 14px;
-    border: 1px solid var(--border);
-  }
-
-  .tool-card .tool-num {
-    font-size: 12px;
-    color: var(--terracotta);
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 6px;
-  }
-
-  .tool-card .tool-name {
+  p {
     font-size: 17px;
-    font-weight: 700;
-    color: var(--dark);
-    margin-bottom: 8px;
+    margin: 0 0 18px;
   }
 
-  .tool-card .tool-desc {
-    font-size: 14px;
-    color: var(--text-light);
-    line-height: 1.7;
+  h2 {
+    color: var(--ink);
+    font-size: 24px;
+    line-height: 1.35;
+    margin: 38px 0 16px;
+    letter-spacing: 0;
   }
 
-  /* ── Teacher ── */
-  .teacher-block {
-    display: flex;
-    gap: 16px;
-    align-items: flex-start;
-    background: var(--card-bg);
-    padding: 24px;
-    border-radius: 16px;
-    margin: 0 28px 36px;
+  h3 {
+    color: var(--ink);
+    font-size: 19px;
+    margin: 28px 0 12px;
   }
 
-  .teacher-avatar {
-    width: 64px; height: 64px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--terracotta), var(--amber));
-    flex-shrink: 0;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 28px; color: #fff; font-weight: 700;
+  ul {
+    margin: 0 0 24px;
+    padding-left: 0;
+    list-style: none;
   }
 
-  .teacher-info h3 {
-    font-size: 17px;
-    color: var(--dark);
-    margin-bottom: 6px;
-  }
-
-  .teacher-info p {
-    font-size: 13px;
-    color: var(--text-light);
-    line-height: 1.7;
-  }
-
-  /* ── Course info ── */
-  .info-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-  }
-
-  .info-item {
-    background: #fff;
-    padding: 18px 14px;
-    border-radius: 12px;
-    border: 1px solid var(--border);
-    text-align: center;
-  }
-
-  .info-item .info-label {
-    font-size: 12px;
-    color: var(--text-light);
-    margin-bottom: 4px;
-  }
-
-  .info-item .info-value {
+  li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 12px;
     font-size: 16px;
+  }
+
+  li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--gold);
+  }
+
+  blockquote {
+    margin: 24px 0;
+    padding: 18px 18px 18px 20px;
+    border-left: 4px solid var(--rust);
+    background: var(--soft-rust);
+    color: var(--ink);
+    font-size: 18px;
     font-weight: 700;
-    color: var(--dark);
+    border-radius: 0 8px 8px 0;
   }
 
-  .info-item .info-value.free {
-    color: var(--terracotta);
-    font-size: 20px;
+  .note {
+    padding: 18px;
+    margin: 24px 0;
+    border-radius: 8px;
+    background: var(--soft-sage);
+    border: 1px solid #d7e6df;
   }
 
-  /* ── CTA ── */
-  .cta-section {
-    padding: 32px 28px 48px;
-    text-align: center;
+  .note strong { color: var(--sage); }
+
+  .pull {
+    margin: 32px 0;
+    padding: 24px 20px;
+    color: var(--ink);
+    background: var(--soft-gold);
+    border: 1px solid #f0dfb7;
+    border-radius: 8px;
+    font-size: 22px;
+    line-height: 1.55;
+    font-weight: 800;
   }
 
-  .cta-section .cta-note {
-    font-size: 13px;
-    color: var(--text-light);
-    margin-top: 16px;
+  .article-img {
+    display: block;
+    width: 100%;
+    margin: 30px 0;
+    border-radius: 8px;
+    border: 1px solid var(--line);
   }
 
-  /* ── Footer ── */
-  .footer {
-    text-align: center;
-    padding: 24px 28px 36px;
+  .steps {
+    display: grid;
+    gap: 14px;
+    margin: 22px 0 30px;
+  }
+
+  .step {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 18px;
+    background: #fff;
+  }
+
+  .step-num {
+    color: var(--rust);
+    font-weight: 800;
     font-size: 12px;
-    color: var(--text-light);
-    opacity: 0.7;
+    letter-spacing: 0.08em;
+    margin-bottom: 6px;
+  }
+
+  .step-title {
+    color: var(--ink);
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .step p {
+    font-size: 15px;
+    color: var(--muted);
+    margin: 0;
+  }
+
+  .cta {
+    margin-top: 36px;
+    padding: 26px 20px;
+    background: #f6f1ec;
+    border-top: 3px solid var(--blue);
+    border-radius: 8px;
+  }
+
+  .cta h2 {
+    margin-top: 0;
+  }
+
+  .footer {
+    padding: 22px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+  }
+
+  @media (min-width: 680px) {
+    .hero { padding: 56px 54px 36px; }
+    article { padding: 16px 54px 58px; }
+    .feature-img { width: calc(100% - 108px); }
+    .steps { grid-template-columns: repeat(3, 1fr); }
   }
 </style>
 </head>
 <body>
-
-<div class="page">
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-badge">纯公益 · 免学费</div>
-    <h1>好父母是<span class="highlight">学出来</span>的</h1>
-    <p class="subtitle">2 天时间，学会让孩子愿意跟你说话</p>
+<main class="page">
+  <header class="hero">
+    <div class="kicker">虢海平 NLP 家庭关系</div>
+    <h1>你以为自己缺钱，其实是在继承一种恐惧</h1>
+    <p class="subtitle">一花钱就不安，一谈钱就紧张。很多人的金钱焦虑，不是从工资条开始，而是从小时候餐桌上的沉默开始。</p>
     <div class="meta">
-      <span>📍 长沙</span>
-      <span>📅 2 天线下</span>
-      <span>👩‍🏫 虢海平导师</span>
+      <span>2026-06-04</span>
+      <span>原生家庭</span>
+      <span>金钱焦虑</span>
+      <span>约 8 分钟读完</span>
     </div>
-    <a href="#cta" class="btn-primary">立即预约席位</a>
-  </section>
+  </header>
 
-  <!-- Pain points -->
-  <section class="section">
-    <h2 class="section-title">你也在经历这些吗</h2>
-    <div class="pain-cards">
-      <div class="pain-card">明明想好好说话，一开口就变成了吼</div>
-      <div class="pain-card">道理讲了无数遍，孩子一个字都没听进去</div>
-      <div class="pain-card">孩子回家就关门，你连他发生了什么都不知道</div>
-      <div class="pain-card">你发现自己越来越像当年的父母，你不想那样</div>
+  <img class="feature-img" src="article-money-01.png" alt="手机账单提醒旁，一个人意识到金钱焦虑来自旧的家庭记忆">
+
+  <article>
+    <p class="lead">你有没有发现，只要手机弹出一条“大额支出提醒”，你心里就会先一紧。</p>
+    <p>哪怕账户并没有见底，脑子里还是会自动跳出那句熟悉的话：“钱很难赚，别乱花。”</p>
+    <p>你长大以后，以为这只是“还不够有钱”。可那种揪着的感觉，常常跟数字多少无关。它更像一种从小到大被反复灌进去的恐惧：一花钱就不安，一谈钱就紧张，一想到未来就只剩下“万一不够怎么办”。</p>
+    <blockquote>这不是你一个人的问题。这是一整代人都可能卡住的金钱焦虑家庭模式。</blockquote>
+
+    <h2>金钱焦虑不是从工资条开始，是从餐桌上的沉默开始</h2>
+    <p>很多人以为，自己的金钱焦虑是从开始工作、开始养家才出现的。但如果你认真回想，会发现它的源头要早得多。</p>
+    <ul>
+      <li>家里一到月底就开始算账，水电、房贷、学费，算着算着气氛就凝重起来。</li>
+      <li>过年走亲戚，寒暄之后就开始问收入、房子、未来打算，回家路上大人又叹气说：“咱家命就是这样。”</li>
+      <li>你只是想要一双新鞋、一节兴趣班，得到的却是一大段“你知不知道赚钱有多难”。</li>
+    </ul>
+    <p>那时候你不懂资产负债表，只知道：谈钱的时候，大人会紧张；花钱的时候，家里的空气会变冷；钱，似乎总是不够的。</p>
+    <p>于是你悄悄在心里做了一个等号：钱 = 不安全 = 吵架 = 麻烦。</p>
+
+    <img class="article-img" src="article-money-02.png" alt="餐桌上的账本和沉默的家庭气氛">
+
+    <h2>你以为你在做选择，其实只是换了个壳重演原生家庭</h2>
+    <p>很多人特别相信：“我跟我爸妈不一样，我会活出另一种人生。”但到了一定年纪，你会突然意识到，你以为你在做选择，其实是被写好的“金钱剧本”推着走。</p>
+    <ul>
+      <li>明明收入还可以，可看到别人多赚一点、多买一套房，你立刻觉得自己落后了。</li>
+      <li>每次想给自己买点什么，第一反应不是“我需不需要”，而是“我配不配”。</li>
+      <li>账上有存款也不踏实，总觉得“再多一点才安全”，但多到多少才算够，自己也说不出来。</li>
+      <li>一谈到给父母钱、给孩子花钱，你就被罪恶感和压力夹在中间。</li>
+    </ul>
+    <p>这不是简单的“成年人压力”。原生家庭最厉害的地方就在这里：它不只影响你的收入水平，更给了你一整套面对钱时自动会有的情绪和反应。</p>
+
+    <div class="pull">真正困住你的，不是你赚得不够多，而是你没意识到自己一直在演一出旧戏。</div>
+
+    <h2>底层脚本没动，赚更多也可能只是更焦虑</h2>
+    <p>很多人把解决金钱焦虑理解成“我要赚更多”“我要学理财”。这些当然有用，但如果底层脚本没动，你可能只是用同一套恐惧，驱动自己跑得更快。</p>
+    <p>你看了很多理财书，准备做决定时，最大的声音依然是怕亏、怕错、怕被骂。你知道要提升自己，但一想到尝试新东西，就会被“出事怎么办”的感觉吓退。你努力省钱，压抑久了又在某个瞬间补偿性消费，然后陷入新一轮自责。</p>
+    <div class="note"><strong>所以第一步不是追求一个新数字，</strong>而是先看见：原来我一直把钱当成危险，把消费当成审判，把安全感寄托在永远不够的“再多一点”。</div>
+
+    <img class="article-img" src="article-money-03.png" alt="一个家庭用更平静合作的方式谈论预算">
+
+    <h2>从你开始，这个家不再用焦虑谈钱</h2>
+    <p>那我们到底可以怎么做？不需要一夜之间变成理财高手，也不用强迫自己立刻“不焦虑”。先从三个小动作开始。</p>
+    <div class="steps">
+      <section class="step">
+        <div class="step-num">STEP 01</div>
+        <div class="step-title">把看钱从审判变成观察</div>
+        <p>看账单时先不贴标签，只问：“原来我在这里这么没有安全感。”</p>
+      </section>
+      <section class="step">
+        <div class="step-num">STEP 02</div>
+        <div class="step-title">换一种和钱说话的语言</div>
+        <p>把“别乱花”改成“我要更清醒地用它，而不是用恐惧管自己”。</p>
+      </section>
+      <section class="step">
+        <div class="step-num">STEP 03</div>
+        <div class="step-title">给下一代新的谈钱方式</div>
+        <p>让孩子看到：钱可以被讨论，压力可以被合作处理，人比钱更重要。</p>
+      </section>
     </div>
-  </section>
 
-  <!-- Quote -->
-  <div class="quote-block">
-    <p class="quote-text">"每一次把沟通变成控制，孩子就关一扇窗。<br>每一次把控制换成沟通，孩子就开一扇门。"</p>
-    <p class="quote-author">—— 虢海平</p>
-  </div>
+    <h2>真正的打破，不是暴富，而是换了一种活法</h2>
+    <p>很多人幻想，打破金钱焦虑的那一天，一定是突然暴富。但现实往往相反，真正的转折点发生在很小的瞬间。</p>
+    <ul>
+      <li>你第一次没有因为给自己花钱而自责，而是真心说：“谢谢你，辛苦了。”</li>
+      <li>你第一次在伴侣面前坦白自己的金钱恐惧，而不是用指责把对方推开。</li>
+      <li>你第一次在孩子面前平静地谈预算，而不是把压力丢给他。</li>
+    </ul>
+    <p>就在这些瞬间，你让这个家族从“用焦虑谈钱”，变成“用觉察和合作谈钱”。它也许不会立刻改变账户里的数字，但会改变你看待数字的眼光，也会改变你留给下一代关于钱的记忆。</p>
 
-  <!-- Tools -->
-  <section class="section">
-    <h2 class="section-title">两天里，你会带走三样东西</h2>
-    <div class="tool-list">
-      <div class="tool-card">
-        <div class="tool-num">01</div>
-        <div class="tool-name">录像机说话</div>
-        <div class="tool-desc">只讲事实不加评判。把"你又打翻了"换成"牛奶洒了，我去拿抹布"——三秒钟，孩子从防御变合作。</div>
-      </div>
-      <div class="tool-card">
-        <div class="tool-num">02</div>
-        <div class="tool-name">声调灵活训练</div>
-        <div class="tool-desc">同样一句话，用命令的声调是控制，用邀请的声调是沟通。现场用十几种声调练习，你才会发现——原来自己只会两种：命令和着急。</div>
-      </div>
-      <div class="tool-card">
-        <div class="tool-num">03</div>
-        <div class="tool-name">聆听复述</div>
-        <div class="tool-desc">孩子说"不想上学"，你先不追问，只是说"嗯，你不想上学，妈妈听到了"。停三秒。他真正的想法，才敢从第二句出来。</div>
-      </div>
-    </div>
-  </section>
+    <blockquote>不是含着泪缩着花，是站着心安地花。</blockquote>
+    <p>真正的金钱自由，从来不只是赚到多少钱。它是你不再被上一代的恐惧驱动，而是由你自己决定怎么过这一生。你可以认真规划，也允许享受当下；你在给父母、给孩子花钱时，不再是“还债”，而是带着清醒、带着爱。</p>
+    <p>从你开始，这个家族关于“钱”的故事，就已经不一样了。</p>
 
-  <!-- Teacher -->
-  <div class="teacher-block">
-    <div class="teacher-avatar">虢</div>
-    <div class="teacher-info">
-      <h3>虢海平 导师</h3>
-      <p>美国 NLP 大学注册导师，中国 NLP 实用心理学领域资深导师。17 年一线授课，线下 1600+ 天，学员遍布全国。80% 来自转介绍——不好，没人会推荐。</p>
-    </div>
-  </div>
+    <section class="cta">
+      <h2>如果你也想改写旧模式</h2>
+      <p>虢海平 NLP 与萨提亚家庭关系课程，关注的不是让你立刻变成另一个人，而是帮你看见那些自动反应从哪里来，然后一点点换成更自由、更有爱的选择。</p>
+      <p>愿你不是跪着回报，也不是含泪硬撑，而是站着、清醒地改写自己的故事。</p>
+    </section>
+  </article>
 
-  <!-- Course info -->
-  <section class="section">
-    <h2 class="section-title">课程信息</h2>
-    <div class="info-grid">
-      <div class="info-item">
-        <div class="info-label">时间</div>
-        <div class="info-value">2 天</div>
-      </div>
-      <div class="info-item">
-        <div class="info-label">地点</div>
-        <div class="info-value">长沙 · 线下</div>
-      </div>
-      <div class="info-item">
-        <div class="info-label">学费</div>
-        <div class="info-value free">免费</div>
-      </div>
-      <div class="info-item">
-        <div class="info-label">形式</div>
-        <div class="info-value">体验式教学</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-section" id="cta">
-    <a href="#" class="btn-primary">添加微信 · 预约席位</a>
-    <p class="cta-note">备注"亲子公益课"，名额有限，报满即止</p>
-  </section>
-
-  <!-- Footer -->
-  <div class="footer">
-    润鼎文化（中国 NLP 中心）· 长沙<br>
-    把爱传出去，把光带回家
-  </div>
-
-</div>
-
+  <footer class="footer">
+    润鼎文化（中国 NLP 中心）· 虢海平 NLP 家庭关系
+  </footer>
+</main>
 </body>
 </html>
